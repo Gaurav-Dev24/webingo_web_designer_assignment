@@ -217,9 +217,10 @@ main {
     color: var(--white);
     background-color: #242323;
     background-blend-mode: multiply;
+    margin-bottom: 15rem;
 }
 .item-top{
-    padding-top: 7rem;
+    padding-top: 27rem;
     text-align: center;
 }
 .item-top > h1{
@@ -241,8 +242,6 @@ main {
     background-color: var(--white);
     height: 70vh;
     padding: 5rem;
-    margin-bottom: 1rem;
-
     position: relative;
     top: 12rem;
 }
@@ -270,7 +269,7 @@ main {
 /* service-second-container */
 
 .service-second-container{
-    margin: 11rem 2.5rem;
+    margin: 18rem 2.5rem;
     padding: 8rem;
 }
 
@@ -301,7 +300,7 @@ main {
 
 .service-down-description{
     text-align: center;
-    margin: 2rem 0;
+    margin: 15rem 0;
     font-size: 3rem;
     color: #616060;
 }
@@ -311,7 +310,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10rem 7rem;
+    margin-left:  7rem;
+    margin-top: 10rem;
 }
 
 .pricing-left{
@@ -371,6 +371,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 3rem;
 }
 .enterprise,.standard,.startup {
     height: 35rem;
@@ -747,4 +748,117 @@ main {
     color: var(--para-footer);
     padding: 0 3rem;
     border-right: 0.1rem solid var(--para-footer);
+}
+
+@media (max-width: 600px){
+    /* social media */
+    .social-media-left{
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+    .social-media-left > div{
+        border: none;
+    }
+    
+    /* navbar-items */
+    header{
+        display: block;
+        text-align: flex-start;
+        margin: 1.5rem 1rem;
+    }
+    .navbar-left > i {
+        font-size: 2.5rem;
+    }
+    .navbar-left {
+        display: none;
+    }
+    .navbar-items > ul {
+        display: none;
+    }
+    .sign-up{
+        margin: 0 2rem;
+    }
+    .sign-up > button {
+        max-width: 10rem;
+        font-size: 1rem;
+    }
+
+    /* main */
+    main{
+        display: block;
+    }
+    .hero-left{
+        max-width: 30%;
+        margin-left: 5rem;
+    }
+    .hero-left > h1{
+        font-size: 1.8rem;
+    }
+    .hero-left > p{
+        font-size: 1.3rem;
+    }
+    .hero-left-btn{
+        display: block;
+        max-width: 100%;
+    }
+    .hero-left-btn > span{
+        padding-left: 3rem;    
+    }
+    .hero-right > img{
+        margin: 2rem;
+        max-width: 42%;
+        height: 50%;
+    }
+
+    /* features */
+    .features{
+        display: block;
+        max-width: 40%;
+        margin-left: 2rem;
+    }
+    .features-items {
+        margin: 3rem 0;
+    }
+    .features-items > i{
+        font-size: 4rem;
+    }
+    .features-items > h5{
+        font-size: 1.5rem;
+    }
+    .features-items > p{
+        font-size: 1rem;
+    }
+
+    /* services */
+    .services{
+        max-width: 40%; 
+        justify-content: flex-start;
+    }
+    .item-top > h1{
+        font-size: 2rem;
+    }
+    .item-top > p{
+        max-width: 50%;
+        font-size: 1rem;
+        line-height: 2;
+        margin-left: 6rem;
+    }
+    .service-items{
+        display: block;
+        text-align: center;
+        margin: 0  1rem;
+    }
+    .items{
+        margin: 2rem 0;
+    }
+    .items > img{
+        max-width: 50%;
+        height: auto;
+    }
+    .items > h5{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    
 }
